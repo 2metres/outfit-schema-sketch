@@ -31,9 +31,8 @@ class App extends Component {
       );
     }
 
-    // Render something with the settings here
     return (
-      <h1>I haz some setings {JSON.stringify(this.state.sesttings)}</h1>
+      <h1>I haz some setings {JSON.stringify(this.state.settings)}</h1>
     );
   }
 };
