@@ -1,5 +1,6 @@
 {
   "projects": {
-    "staging": "outfit-schema-sketch"
+    "staging": "outfit-schema-sketch",
+    "default": "outfit-schema-sketch"
   }
 }
