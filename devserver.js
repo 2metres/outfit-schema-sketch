@@ -16,8 +16,8 @@ const wrap = (name, color, ex, args) => {
   return child;
 };
 
-const functions = wrap('functions', BLUE, 'npm', ['run', 'serve']);
-const neutrino  = wrap('neutrino', YELLOW, 'npm', ['run', 'start']);
+const functions = wrap('λ ', BLUE, 'npm', ['run', 'serve']);
+const neutrino  = wrap('⚛︎ ', YELLOW, 'npm', ['run', 'start']);
 
 const app = express();
 
