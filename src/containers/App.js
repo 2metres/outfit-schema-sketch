@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Form from "react-jsonschema-form";
+import { titleCase } from 'change-case';
 
 const createDocument = () => fetch('/api/create', {
   method: 'POST',
@@ -32,7 +34,10 @@ class App extends Component {
     }
 
     return (
-      <h1>I haz some setings {JSON.stringify(this.state.settings)}</h1>
+      <div>
+        <h1>I haz some settings</h1>
+        <Form schema={ this.state.settings }/>
+      </div>
     );
   }
 };

@@ -2,6 +2,8 @@ import React from 'react';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
+import 'milligram';
+
 import App from './containers/App';
 
 const load = () => render((
