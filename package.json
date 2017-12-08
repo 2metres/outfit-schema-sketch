@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "serve ./public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +17,6 @@
   },
   "homepage": "https://github.com/raywhite/outfit-schema-sketch#readme",
   "devDependencies": {
-    "firebase-tools": "^3.16.0",
-    "serve": "^6.4.1"
+    "firebase-tools": "^3.16.0"
   }
 }
