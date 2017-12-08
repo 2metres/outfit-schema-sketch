@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "cd functions && npm install",
+    "deploy": "npm run build && firebase deploy",
     "serve": "firebase serve --only hosting,functions --port 5000",
+    "postinstall": "cd functions && npm install",
     "start": "neutrino start",
     "dev": "node devserver.js",
     "build": "neutrino build",

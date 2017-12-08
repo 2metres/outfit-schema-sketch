@@ -27,15 +27,14 @@ class App extends Component {
   render() {
     if (!this.state.settings) {
       return (
-        <div className='App'>
+        <div className='container'>
           <button onClick={this.getSettings}>Create Document</button>
         </div>
       );
     }
 
     return (
-      <div>
-        <h1>I haz some settings</h1>
+      <div className='container'>
         <Form schema={ this.state.settings }/>
       </div>
     );
