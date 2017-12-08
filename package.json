@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "firebase serve --only hosting,functions",
     "postinstall": "cd functions && npm install",
-    "start": "neutrino start --use neutrino-preset-react",
-    "build": "neutrino build --use neutrino-preset-react",
+    "serve": "firebase serve --only hosting,functions --port 5000",
+    "start": "neutrino start",
+    "dev": "node devserver.js",
+    "build": "neutrino build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +22,8 @@
   },
   "homepage": "https://github.com/raywhite/outfit-schema-sketch#readme",
   "devDependencies": {
+    "express": "^4.16.2",
+    "express-http-proxy": "^1.1.0",
     "firebase-tools": "^3.16.0",
     "neutrino": "^7.4.0",
     "neutrino-preset-react": "^7.4.0"
