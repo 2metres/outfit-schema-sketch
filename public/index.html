@@ -10,10 +10,23 @@
   <body>
     <main class="container">
       <h1>Create a document</h1>
-      <form method="post" action="/">
-        <input value="['agent','suburb','totalSales']" id="fields" name="fields" type="hidden" />
-        <button type="submit">Create Document</button>
-      </form>
+      <button onClick="createDocument()">Create Document</button>
     </main>
+    <script type="text/javascript">
+      const createDocument = () => {
+        fetch('/api/create', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify([
+            'agent',
+            'suburb',
+            'recentSales',
+            'totalSales',
+          ]),
+        }).then(res => console.log(res))
+      }
+    </script>
   </body>
 </html>
