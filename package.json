@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "serve": "firebase serve --only hosting,functions",
+    "postinstall": "cd functions && npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
