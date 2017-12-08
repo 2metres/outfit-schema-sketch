@@ -1,0 +1,24 @@
+{
+  "name": "outfit-schema-sketch",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "serve ./public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raywhite/outfit-schema-sketch.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raywhite/outfit-schema-sketch/issues"
+  },
+  "homepage": "https://github.com/raywhite/outfit-schema-sketch#readme",
+  "devDependencies": {
+    "firebase-tools": "^3.16.0",
+    "serve": "^6.4.1"
+  }
+}
