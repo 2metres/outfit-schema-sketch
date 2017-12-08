@@ -6,6 +6,8 @@
   "scripts": {
     "serve": "firebase serve --only hosting,functions",
     "postinstall": "cd functions && npm install",
+    "start": "neutrino start --use neutrino-preset-react",
+    "build": "neutrino build --use neutrino-preset-react",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +21,13 @@
   },
   "homepage": "https://github.com/raywhite/outfit-schema-sketch#readme",
   "devDependencies": {
-    "firebase-tools": "^3.16.0"
+    "firebase-tools": "^3.16.0",
+    "neutrino": "^7.4.0",
+    "neutrino-preset-react": "^7.4.0"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-hot-loader": "^3.0.0"
   }
 }
