@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
-import 'milligram';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
 import App from './containers/App';
 

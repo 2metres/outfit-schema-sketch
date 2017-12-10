@@ -28,7 +28,7 @@ class App extends Component {
     if (!this.state.settings) {
       return (
         <div className='container'>
-          <button onClick={this.getSettings}>Create Document</button>
+          <button className="btn btn-primary btn-block" onClick={this.getSettings}>Create Document</button>
         </div>
       );
     }
