@@ -35,7 +35,7 @@ class App extends Component {
 
     return (
       <div className='container'>
-        <button onClick={this.getSettings}>Reset Document</button>
+        <button className="btn btn-danger" onClick={this.getSettings}>Reset Document</button>
         <Form schema={ this.state.settings }/>
       </div>
     );
