@@ -21,25 +21,38 @@ class App extends Component {
   };
 
   getSettings = () => {
-    createDocument().then(settings => this.setState({ settings }));
+    createDocument()
+    .then(settings =>
+      this.setState({ settings })
+    );
   }
 
   render() {
     if (!this.state.settings) {
       return (
         <div className='container'>
-          <button className="btn btn-primary btn-block" onClick={this.getSettings}>Create Document</button>
+          <button
+            className="btn btn-primary btn-block"
+            onClick={ this.getSettings }
+          >
+            Create Document
+          </button>
         </div>
-      );
+      )
     }
 
     return (
       <div className='container'>
-        <button className="btn btn-danger" onClick={this.getSettings}>Reset Document</button>
+        <button
+          className="btn btn-danger"
+          onClick={ this.getSettings }
+        >
+          Reset Document
+        </button>
         <Form schema={ this.state.settings }/>
       </div>
-    );
+    )
   }
-};
+}
 
 export default App;
